@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        
+        body {
+            background-color: #6b543b;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            border: 5px solid navy;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+        }
+
+        .header-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .form-container {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 90%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .gender-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: white;
+            border: 1px solid black;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer button {
+            background: none;
+            color: white;
+            border: none;
+            font-size: 12px;
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Scripture Feed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/jesus_feeds_5000.jpeg" alt="Jesus teaching" class="header-img">
+            <div class="title">Daily Feed<br><span>Scripture a Day</span></div>
+        </div>
+        <div class="form-container">
+            <h2>Sign Up for Daily Scripture Feed</h2>
+            <form>
+                <label>User Name:</label>
+                <input type="text" name="username"><br>
+
+                <label>Password:</label>
+                <input type="password" name="password"><br>
+
+                <label>Email:</label>
+                <input type="email" name="email"><br>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female<br>
+
+                <input type="checkbox" name="newsletter"> Subscribe to newsletter<br>
+                <input type="checkbox" name="terms"> I acknowledge the terms and conditions<br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="footer footer img">
+            <img src="images/old_testament.webp" width="100" height="auto">
+            <img src="images/new_testament.webp" width="100" height="auto">
+            <img src="images/book_of_mormon.webp" width="100" height="auto">
+            <img src="images/doctrine_and_covenants.webp" width="100" height="auto">
+            <img src="images/pearl_of_great_price.webp" width="100" height="auto">
+        </div>
+    </div>
+</body>
+
+</html>
